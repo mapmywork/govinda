@@ -8,6 +8,7 @@ import Fleet from '../components/sections/Fleet';
 import { motion } from 'framer-motion';
 
 import Contact from '../components/sections/Contact';
+import Founder from '../components/sections/Founder';
 import howItWorksBg from '../assets/images/how-it-works-bg.png';
 
 export default function Home() {
@@ -84,6 +85,7 @@ export default function Home() {
         </div>
       </section>
       
+      <Founder />
       <Contact />
       <Footer />
     </div>
