@@ -2,6 +2,8 @@ import React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { cn } from '../../utils/cn';
+import logoImg from '../../assets/logos/logo.png';
+
 
 export default function Footer() {
   return (
@@ -10,7 +12,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
-            <img src="/src/assets/logos/logo.png" alt="Govinda Go Logo" className="h-20 lg:h-24 mb-6 object-contain rounded-lg shadow-sm" />
+            <img src={logoImg} alt="Govinda Go Logo" className="h-20 lg:h-24 mb-6 object-contain rounded-lg shadow-sm" />
             <p className="text-sm leading-relaxed mb-6">
               Experience the joy of driving well-maintained, insured and sanitized vehicles with complete freedom. Premium self-drive cars and bikes in Tirupati.
             </p>

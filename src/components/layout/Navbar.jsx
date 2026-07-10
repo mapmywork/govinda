@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
 import Button from '../ui/Button';
 import { cn } from '../../utils/cn';
+import logoImg from '../../assets/logos/logo.png';
+
 
 const navLinks = [
   { name: 'Home', path: '#home' },
@@ -35,7 +37,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2 z-50 relative">
-          <img src="/src/assets/logos/logo.png" alt="Govinda Go Logo" className="h-14 lg:h-16 object-contain rounded-md" />
+          <img src={logoImg} alt="Govinda Go Logo" className="h-14 lg:h-16 object-contain rounded-md" />
         </a>
 
         {/* Desktop Nav */}
