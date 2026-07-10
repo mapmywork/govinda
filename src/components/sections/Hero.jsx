@@ -33,12 +33,12 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="mb-6 flex justify-center"
+            className="mb-2 -mt-12 md:-mt-20 flex justify-center"
           >
             <img
               src="/logo.png"
               alt="Govinda Go - Self Drive Cars & Bikes"
-              className="w-64 md:w-80 h-auto drop-shadow-[0_4px_24px_rgba(244,180,0,0.3)]"
+              className="w-80 md:w-[28rem] lg:w-[32rem] h-auto drop-shadow-[0_4px_24px_rgba(244,180,0,0.3)]"
             />
           </motion.div>
 
