@@ -12,7 +12,7 @@ const cars = [
     fuel: 'Diesel',
     transmission: 'Automatic',
     seats: '5',
-    image: 'https://images.unsplash.com/photo-1563720225384-9a5873c09f14?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Creta/8667/1755765115423/front-left-side-47.jpg',
     tag: 'Popular'
   },
   {
@@ -23,7 +23,7 @@ const cars = [
     fuel: 'Petrol',
     transmission: 'Automatic',
     seats: '5',
-    image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1000&auto=format&fit=crop'
+    image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/204398/verna-exterior-right-front-three-quarter.png?isig=0&q=80'
   },
   {
     id: 3,
@@ -62,12 +62,12 @@ export default function Fleet() {
   return (
     <section id="fleet" className="py-24 bg-[#F9FAFB]">
       <div className="container mx-auto px-4 md:px-6">
-        <SectionHeading 
-          title="Our Premium Fleet" 
+        <SectionHeading
+          title="Our Premium Fleet"
           subtitle="Choose Your Ride"
           centered
         />
-        
+
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {cars.map((car) => (
             <div key={car.id} className="w-full max-w-[400px]">
