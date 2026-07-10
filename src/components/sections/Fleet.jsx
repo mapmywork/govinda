@@ -6,17 +6,48 @@ import CarCard from '../ui/CarCard';
 const cars = [
   {
     id: 1,
-    name: 'Hyundai Creta',
-    category: 'Premium SUV',
-    price: '2499',
-    fuel: 'Diesel',
-    transmission: 'Automatic',
+    name: 'Renault Kwid Climber',
+    category: 'Hatchback',
+    price: '999',
+    fuel: 'Petrol',
+    transmission: 'Manual',
     seats: '5',
-    image: 'https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Creta/8667/1755765115423/front-left-side-47.jpg',
-    tag: 'Popular'
+    image: 'https://imgd.aeplcdn.com/1056x594/n/yzpf5jb_1964930.jpg?q=80',
+    tag: 'Budget Friendly'
   },
   {
     id: 2,
+    name: 'Maruti Swift',
+    category: 'Hatchback',
+    price: '1499',
+    fuel: 'Petrol',
+    transmission: 'Manual',
+    seats: '5',
+    image: 'https://avgmotors.co.in/wp-content/uploads/2022/03/Pearl-Arctic-White-2-876x535.png'
+  },
+  {
+    id: 3,
+    name: 'Maruti Baleno',
+    category: 'Premium Hatchback',
+    price: '1599',
+    fuel: 'Petrol',
+    transmission: 'Manual',
+    seats: '5',
+    image: 'https://imgd.aeplcdn.com/1920x1080/n/cw/ec/102663/baleno-exterior-right-front-three-quarter-69.png?isig=0&q=80&q=80'
+  },
+  {
+    id: 4,
+    name: 'Skoda Kushaq',
+    category: 'SUV',
+    price: '1899',
+    fuel: 'Petrol',
+    transmission: 'Manual',
+    seats: '5',
+    image: 'https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kushaq/13279/1779266052419/front-left-side-47.jpg',
+    tag: 'Popular'
+  },
+  {
+    id: 5,
     name: 'Hyundai Verna',
     category: 'Luxury Sedan',
     price: '2199',
@@ -26,35 +57,25 @@ const cars = [
     image: 'https://imgd.aeplcdn.com/664x374/n/cw/ec/204398/verna-exterior-right-front-three-quarter.png?isig=0&q=80'
   },
   {
-    id: 3,
+    id: 6,
+    name: 'Hyundai Creta',
+    category: 'Premium SUV',
+    price: '2499',
+    fuel: 'Petrol',
+    transmission: 'Automatic',
+    seats: '5',
+    image: 'https://img.gaadicdn.com/images/car-images/large/Hyundai/Creta/11439/1777531540562/Atlas-White_d8dfe5.jpg'
+  },
+  {
+    id: 7,
     name: 'Toyota Innova',
     category: 'Premium MPV',
     price: '3499',
     fuel: 'Diesel',
     transmission: 'Manual',
     seats: '7',
-    image: 'https://images.unsplash.com/photo-1609521263047-f8f205293f24?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://img.pcauto.com/model/images/touPic/my/Toyota-Innova-Zenix_4725.png',
     tag: 'Best for Family'
-  },
-  {
-    id: 4,
-    name: 'Maruti Swift',
-    category: 'Hatchback',
-    price: '1499',
-    fuel: 'Petrol',
-    transmission: 'Manual',
-    seats: '5',
-    image: 'https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1000&auto=format&fit=crop'
-  },
-  {
-    id: 5,
-    name: 'Royal Enfield',
-    category: 'Cruiser Bike',
-    price: '999',
-    fuel: 'Petrol',
-    transmission: 'Manual',
-    seats: '2',
-    image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1000&auto=format&fit=crop'
   }
 ];
 
