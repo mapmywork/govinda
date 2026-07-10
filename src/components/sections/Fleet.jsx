@@ -5,6 +5,28 @@ import CarCard from '../ui/CarCard';
 
 const cars = [
   {
+    id: 8,
+    name: 'Suzuki Access 125',
+    category: 'Scooter',
+    price: '350',
+    fuel: 'Petrol',
+    transmission: 'Automatic',
+    seats: '2',
+    image: 'https://imgd.aeplcdn.com/1280x720/n/cw/ec/188491/access-125-2025-right-front-three-quarter-2.jpeg?isig=0',
+    tag: 'Two-Wheeler'
+  },
+  {
+    id: 9,
+    name: 'Royal Enfield Classic 350',
+    category: 'Cruiser Bike',
+    price: '650',
+    fuel: 'Petrol',
+    transmission: 'Manual',
+    seats: '2',
+    image: 'https://images.91wheels.com/assets/b_images/gallery/royalenfield/bullet-350/royalenfield-bullet-350-0-1769515350.png?w=520&q=40',
+    tag: 'Two-Wheeler'
+  },
+  {
     id: 1,
     name: 'Renault Kwid Climber',
     category: 'Hatchback',
