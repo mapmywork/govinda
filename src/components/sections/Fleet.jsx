@@ -43,7 +43,7 @@ const cars = [
     fuel: 'Petrol',
     transmission: 'Manual',
     seats: '5',
-    image: 'https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kushaq/13279/1779266052419/front-left-side-47.jpg',
+    image: '/111.jpeg',
     tag: 'Popular'
   },
   {
