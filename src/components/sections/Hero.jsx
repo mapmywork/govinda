@@ -28,17 +28,17 @@ export default function Hero() {
 
       <div className="container relative z-10 mx-auto px-4 md:px-6 flex-1 flex flex-col justify-center">
         <div className="max-w-4xl text-center mx-auto w-full">
-          {/* Mobile Logo */}
+          {/* Main Logo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="mb-6 flex justify-center md:hidden"
+            className="mb-6 flex justify-center"
           >
             <img
-              src="/govinda-go-logo.png"
+              src="/logo.png"
               alt="Govinda Go - Self Drive Cars & Bikes"
-              className="w-64 h-auto drop-shadow-[0_4px_24px_rgba(244,180,0,0.3)]"
+              className="w-64 md:w-80 h-auto drop-shadow-[0_4px_24px_rgba(244,180,0,0.3)]"
             />
           </motion.div>
 
