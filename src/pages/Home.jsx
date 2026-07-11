@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
@@ -11,14 +13,14 @@ import Contact from '../components/sections/Contact';
 import Founder from '../components/sections/Founder';
 import howItWorksBg from '../assets/images/how-it-works-bg.png';
 
-export default function Home() {
+export default function Home({ whatsappNumber = '+917997869389', vehicles = [] }) {
   return (
     <div className="bg-[#F9FAFB] min-h-screen">
-      <Navbar />
-      <Hero />
-      <OfferBanner />
+      <Navbar whatsappNumber={whatsappNumber} />
+      <Hero whatsappNumber={whatsappNumber} />
+      <OfferBanner whatsappNumber={whatsappNumber} />
       <Features />
-      <Fleet />
+      <Fleet vehicles={vehicles} />
       
       {/* Services Quick Section */}
       <section id="services" className="py-24 bg-white relative overflow-hidden">
@@ -61,7 +63,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-[#0A0A0A]/70 z-10" />
           <img
-            src={howItWorksBg}
+            src={howItWorksBg.src}
             alt="Scenic road in Tirumala"
             className="w-full h-full object-cover object-center opacity-80"
           />
@@ -86,8 +88,8 @@ export default function Home() {
       </section>
       
       <Founder />
-      <Contact />
-      <Footer />
+      <Contact whatsappNumber={whatsappNumber} />
+      <Footer whatsappNumber={whatsappNumber} />
     </div>
   );
 }

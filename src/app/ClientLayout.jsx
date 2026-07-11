@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
-import Lenis from '@studio-freight/lenis';
-import Home from './pages/Home';
+'use client';
 
-function App() {
+import { useEffect } from 'react';
+import Lenis from '@studio-freight/lenis';
+
+export default function ClientLayout({ children }) {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -26,8 +27,5 @@ function App() {
     return () => lenis.destroy();
   }, []);
 
-  return <Home />;
+  return <>{children}</>;
 }
-
-export default App;
-

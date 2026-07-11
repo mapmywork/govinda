@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { cn } from '../../utils/cn';
 
 
-export default function Footer() {
+export default function Footer({ whatsappNumber = '+917997869389' }) {
   return (
     <footer className="bg-[#111827] pt-20 pb-10 text-gray-400">
       <div className="container mx-auto px-4 md:px-6">
@@ -54,7 +54,7 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#F4B400] shrink-0" />
                 <div className="flex flex-col text-sm">
-                  <a href="tel:+919160869607" className="hover:text-white">+91 9160869607</a>
+                  <a href={`tel:${whatsappNumber}`} className="hover:text-white">{whatsappNumber}</a>
                   <a href="tel:+919440944087" className="hover:text-white">+91 9440944087</a>
                 </div>
               </li>

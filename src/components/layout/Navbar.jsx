@@ -14,7 +14,7 @@ const navLinks = [
   { name: 'Contact', path: '#contact' }
 ];
 
-export default function Navbar() {
+export default function Navbar({ whatsappNumber = '+917997869389' }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -53,14 +53,14 @@ export default function Navbar() {
 
         {/* Desktop Actions */}
         <div className="hidden lg:flex items-center gap-4">
-          <a href="tel:+919160869607" className={cn(
+          <a href={`tel:${whatsappNumber}`} className={cn(
             "flex items-center gap-2 font-bold text-sm",
             isScrolled ? "text-[#0A0A0A]" : "text-white"
           )}>
             <Phone className="w-4 h-4 text-[#F4B400]" />
-            +91 9160869607
+            {whatsappNumber}
           </a>
-          <Button variant="primary" className="py-2.5 px-6">Book Now</Button>
+          <Button variant="primary" className="py-2.5 px-6" onClick={() => window.open(`https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}`, '_blank')}>Book Now</Button>
         </div>
 
         {/* Mobile Toggle */}
@@ -94,10 +94,10 @@ export default function Navbar() {
               ))}
             </nav>
             <div className="mt-auto flex flex-col gap-4">
-              <Button variant="secondary" className="w-full justify-center">
-                <Phone className="w-4 h-4" /> Call +91 9160869607
+              <Button variant="secondary" className="w-full justify-center" onClick={() => window.location.href = `tel:${whatsappNumber}`}>
+                <Phone className="w-4 h-4" /> Call {whatsappNumber}
               </Button>
-              <Button variant="primary" className="w-full justify-center">Book Now</Button>
+              <Button variant="primary" className="w-full justify-center" onClick={() => window.open(`https://wa.me/${whatsappNumber.replace(/[^0-9]/g, '')}`, '_blank')}>Book Now</Button>
             </div>
           </motion.div>
         )}

@@ -20,7 +20,7 @@ export default function Hero() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-[#0A0A0A] z-10" />
         <img
-          src={heroBg}
+          src={heroBg.src}
           alt="Divine Tirumala Hills"
           className="w-full h-full object-cover object-center opacity-70 mix-blend-overlay"
         />
