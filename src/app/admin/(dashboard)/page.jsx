@@ -3,6 +3,8 @@ import { prisma as prismaClient } from '../../../lib/prisma';
 import { Car, CheckCircle, Clock } from 'lucide-react';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 export default async function DashboardHome() {
   const vehicles = await prismaClient.vehicle.findMany({
     orderBy: { createdAt: 'desc' }
